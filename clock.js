@@ -19,9 +19,14 @@ function showTime(){
     s = (s < 10) ? "0" + s : s;
     
     var time = h + ":" + m + ":" + s + " " + session;
+    var hour = h + ":" + m ;
     console.log(time);
     //document.getElementById("MyClockDisplay").innerText = time;
-    document.getElementById("MyClockDisplay").innerHTML = time;
+    document.getElementById("MyClockDisplay").innerHTML = hour;
+    document.getElementById("pm").innerHTML = session;
+    document.getElementById("sec").innerHTML = s;
+    
+    
     
     setTimeout(showTime, 1000);
     
